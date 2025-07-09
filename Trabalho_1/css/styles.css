@@ -55,6 +55,10 @@ table {
     margin-top: 20px;
 }
 
+table > tr > td > img {
+    width: 30px;
+}
+
 th,
 td {
     padding: 12px;
