@@ -84,3 +84,12 @@ tr:hover {
     text-decoration: underline !important;
     text-decoration-color: white !important;
 }
+
+#inner-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#inner-table > tr {
+    background-color: #dcedc8;
+}
