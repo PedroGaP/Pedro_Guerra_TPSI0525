@@ -1,0 +1,203 @@
+@import "./header.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --heading-font: "Lora", serif;
+  --text-font: "Poppins", sans-serif;
+  --background-color: #f6fff8;
+  --primary-color: #b5ead7;
+  --secondary-color: #c7ceea;
+  --text-color: #2e2e2e;
+  --card-background-color: #fff5e4;
+  --hover-color: #ffdac1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--text-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.home-main {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  font-family: var(--text-font);
+}
+
+.quote-section {
+  background-color: var(--card-background-color);
+  border-left: 5px solid var(--primary-color);
+  padding: 20px;
+  font-style: italic;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quotes-list {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quotes-list h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.quote-card {
+  background-color: var(--card-background-color);
+  border-left: 5px solid var(--primary-color);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-card p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-card .quote-author {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.gallery {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: var(--text-font);
+}
+
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: var(--heading-font);
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 15px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  display: block;
+}
+
+.gallery-item p {
+  margin: 10px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.about-container {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+.about-container h2 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-container h3 {
+  font-family: var(--heading-font);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-container a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  padding: 20px;
+  color: var(--background-color);
+  height: 60px;
+  background-color: var(--text-color);
+  text-align: center;
+  font-size: 0.9rem;
+}
