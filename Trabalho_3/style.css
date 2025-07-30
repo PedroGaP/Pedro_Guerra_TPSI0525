@@ -91,6 +91,9 @@ body {
 }
 
 .rodape {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
   background-color: #999;
   color: white;
   text-align: center;
