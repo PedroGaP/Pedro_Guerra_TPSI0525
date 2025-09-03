@@ -1,0 +1,17 @@
+.card:hover {
+  transform: scale(1.1);
+  transition: ease-in 300ms;
+}
+
+.card {
+  transition: ease-in-out 300ms;
+}
+
+.nav-link:hover {
+  color: white !important;
+  transition: all 300ms;
+}
+
+.nav-link {
+  transition: all 300ms;
+}
