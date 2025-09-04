@@ -1,0 +1,64 @@
+.card:hover {
+  transition: all 300ms;
+  transform: scale(1.03);
+}
+
+.card {
+  transition: all 300ms;
+}
+
+.nav-link:hover {
+  transition: all 300ms;
+  color: white !important;
+}
+
+.nav-link {
+  transition: all 300ms;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 400px;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+@keyframes bounceUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.scrollTop:hover {
+  animation: bounceUp 0.9s ease-in-out infinite;
+}
+
+.scrollTop {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.scrollTop.show {
+  opacity: 1;
+  visibility: visible;
+}
