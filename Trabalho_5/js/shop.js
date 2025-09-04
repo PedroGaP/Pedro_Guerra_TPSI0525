@@ -16,7 +16,7 @@ function renderLivros(lista) {
           <h5 class="card-title">${book.title}</h5>
           <p class="card-text text-muted">${book.category} - ${book.author}</p>
           <p class="card-text">${book.description}</p>
-          <p class="fw-bold">${book.price.toFixed(2)} €</p>
+          <p class="fw-bold">€${book.price.toFixed(2)}</p>
           <button class="btn btn-primary buy-button" data-id="${
             book.id
           }">Comprar</button>

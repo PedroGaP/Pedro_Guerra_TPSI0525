@@ -252,10 +252,45 @@
       </div>
     </div>
 
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="cartSheet"
+      aria-labelledby="cartSheetLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="cartSheetLabel">O Seu Carrinho</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column p-3">
+        <div id="cart-items"></div>
+
+        <div class="mt-auto border-top pt-3">
+          <div class="d-flex justify-content-between mb-3">
+            <strong>Total:</strong>
+            <span id="cart-total">€00.00</span>
+          </div>
+          <button class="btn btn-primary w-100 mb-2">Finalizar a Compra</button>
+          <button
+            class="btn btn-outline-secondary w-100"
+            data-bs-dismiss="offcanvas"
+          >
+            Continuar a comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/books.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/scroll_button.js"></script>
+    <script src="./js/cart_modal.js"></script>
   </body>
 </html>

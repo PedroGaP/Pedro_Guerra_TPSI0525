@@ -15,7 +15,7 @@ let refreshTotal = () => {
     total += book.price;
   });
 
-  cartTotal.innerHTML = total.toFixed(2) + "€";
+  cartTotal.innerHTML = "€" + total.toFixed(2);
 };
 
 let loadCartItems = () => {
